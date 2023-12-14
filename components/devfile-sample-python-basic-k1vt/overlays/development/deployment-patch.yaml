@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-k1vt
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/build-e2e-xyzt-tenant/test-app-cfgq/devfile-sample-python-basic-k1vt@sha256:64a637cd7e66967d8ba8f0fa881ea14b84f8746d93e72df3b6056e49af374e3d
+        name: my-python
+        resources: {}
+status: {}
